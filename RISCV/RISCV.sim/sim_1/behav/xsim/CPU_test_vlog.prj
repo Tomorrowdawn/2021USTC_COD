@@ -1,0 +1,36 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../sources/ip/datamem/sim/datamem.v" \
+"../../../../sources/ip/insmem/sim/insmem.v" \
+"../../../../sources/new/ALU.v" \
+"../../../../sources/new/ALUcontrol.v" \
+"../../../../sources/new/BrhUnit.v" \
+"../../../../sources/new/Control.v" \
+"../../../../sources/new/EX.v" \
+"../../../../sources/new/EX_MEM.v" \
+"../../../../sources/new/EX_NORMAL.v" \
+"../../../../sources/new/FALU.v" \
+"../../../../sources/new/FPU.v" \
+"../../../../sources/new/Forward.v" \
+"../../../../sources/new/Fregfile.v" \
+"../../../../sources/new/HDU.v" \
+"../../../../sources/new/ID.v" \
+"../../../../sources/new/ID_EX.v" \
+"../../../../sources/new/IF.v" \
+"../../../../sources/new/IF_ID.v" \
+"../../../../sources/new/IGU.v" \
+"../../../../sources/new/MEM.v" \
+"../../../../sources/new/MEM_WB.v" \
+"../../../../sources/new/Normal.v" \
+"../../../../sources/new/PRE_EX.v" \
+"../../../../sources/new/PipeLineCPU.v" \
+"../../../../sources/new/Regfile.v" \
+"../../../../sources/new/SWAP.v" \
+"../../../../sources/new/Shift.v" \
+"../../../../CPU_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

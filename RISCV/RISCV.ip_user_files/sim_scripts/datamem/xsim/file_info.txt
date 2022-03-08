@@ -1,0 +1,2 @@
+datamem.v,verilog,xil_defaultlib,../../../../sources/ip/datamem/sim/datamem.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

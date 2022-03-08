@@ -1,0 +1,124 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Jun 15 21:08:17 2021
+| Host         : LAPTOP-PASTFALL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopPPCPU_control_sets_placed.rpt
+| Design       : TopPPCPU
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    46 |
+|    Minimum number of control sets                        |    46 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    32 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    46 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    41 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              50 |           29 |
+| No           | No                    | Yes                    |             218 |           72 |
+| No           | Yes                   | No                     |             289 |          134 |
+| Yes          | No                    | No                     |             896 |          440 |
+| Yes          | No                    | Yes                    |             267 |          107 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+|                        Clock Signal                       |                                                 Enable Signal                                                |             Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                                            | CPPL/PipeLineCPU_u/EX_MEM_u/ready_r0_out                                                                     | rst_IBUF                                 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                            | CPPL/PipeLineCPU_u/EX_MEM_u/memResult_reg[10]_0[0]                                                           | rst_IBUF                                 |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                                            | PDU/cnt_m_rf[4]_i_1_n_0                                                                                      | rst_IBUF                                 |                2 |              5 |         2.50 |
+|  CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norFALUop_reg[0]_2[0] |                                                                                                              | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/AR[0] |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG                                            |                                                                                                              |                                          |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG                                            |                                                                                                              | rst_IBUF                                 |                8 |             28 |         3.50 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfregWrite_reg_2[0]                                                     | rst_IBUF                                 |               14 |             32 |         2.29 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfregWrite_reg_0[0]                                                     | rst_IBUF                                 |               12 |             32 |         2.67 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfregWrite_reg_3[0]                                                     | rst_IBUF                                 |               17 |             32 |         1.88 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfregWrite_reg_1[0]                                                     | rst_IBUF                                 |               10 |             32 |         3.20 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/E[0]                                                                      |                                          |               16 |             32 |         2.00 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[0]_2[0]                                                        |                                          |               16 |             32 |         2.00 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[0]_0[0]                                                        |                                          |               19 |             32 |         1.68 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[0]_3[0]                                                        |                                          |               13 |             32 |         2.46 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[2]_3[0]                                                        |                                          |               14 |             32 |         2.29 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[1]_0[0]                                                        |                                          |               15 |             32 |         2.13 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[2]_5[0]                                                        |                                          |               13 |             32 |         2.46 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[3]_2[0]                                                        |                                          |               18 |             32 |         1.78 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[3]_4[0]                                                        |                                          |               19 |             32 |         1.68 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[3]_5[0]                                                        |                                          |               19 |             32 |         1.68 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[3]_0[0]                                                        |                                          |               10 |             32 |         3.20 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[3]_1[0]                                                        |                                          |               20 |             32 |         1.60 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[2]_0[0]                                                        |                                          |               21 |             32 |         1.52 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[0]_1[0]                                                        |                                          |               19 |             32 |         1.68 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[4]_3[0]                                                        |                                          |               16 |             32 |         2.00 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[4]_1[0]                                                        |                                          |               20 |             32 |         1.60 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[3]_6[0]                                                        |                                          |               11 |             32 |         2.91 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[1]_3[0]                                                        |                                          |               13 |             32 |         2.46 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[1]_1[0]                                                        |                                          |               17 |             32 |         1.88 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[2]_2[0]                                                        |                                          |               20 |             32 |         1.60 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[3]_3[0]                                                        |                                          |               13 |             32 |         2.46 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[2]_1[0]                                                        |                                          |               11 |             32 |         2.91 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[2]_4[0]                                                        |                                          |               16 |             32 |         2.00 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[0]_4[0]                                                        |                                          |                9 |             32 |         3.56 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[4]_4[0]                                                        |                                          |               12 |             32 |         2.67 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[1]_2[0]                                                        |                                          |               22 |             32 |         1.45 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[4]_0[0]                                                        |                                          |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                                            | CPPL/PipeLineCPU_u/EX_MEM_u/memResult_reg[10]_1[0]                                                           | rst_IBUF                                 |               22 |             32 |         1.45 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FPU/EX_NORMAL_u/norfRd_reg[4]_2[0]                                                        |                                          |               16 |             32 |         2.00 |
+|  clk_cpu_BUFG                                             |                                                                                                              |                                          |               25 |             38 |         1.52 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/FD/E[0]                                                                                   | rst_IBUF                                 |               28 |             96 |         3.43 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/MEM_u/DM/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0   |                                          |               32 |            128 |         4.00 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/MEM_u/DM/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0 |                                          |               32 |            128 |         4.00 |
+|  clk_cpu_BUFG                                             | CPPL/PipeLineCPU_u/MEM_WB_u/wbRegWrite                                                                       |                                          |               18 |            144 |         8.00 |
+|  clk_cpu_BUFG                                             |                                                                                                              | CPPL/PipeLineCPU_u/FD/SR[0]              |               82 |            159 |         1.94 |
+|  clk_cpu_BUFG                                             |                                                                                                              | rst_IBUF                                 |              111 |            308 |         2.77 |
++-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+
+

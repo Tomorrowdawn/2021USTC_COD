@@ -1,0 +1,62 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/ip/datamem/sim/datamem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/ip/insmem/sim/insmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module insmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/ALUcontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUcontrol
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/BrhUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BrhUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/CPU_PL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_PL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/EX_NORMAL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_NORMAL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/FALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/FPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/Forward.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/Fregfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fregfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/HDU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HDU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/IGU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IGU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/Normal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Normal
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/PRE_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRE_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/PipeLineCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipeLineCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/SWAP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SWAP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/Shift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shift
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/TopPPCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopPPCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/sources/new/pdu_pl_0511.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VerilogProject/RISCV/RISCV.srcs/sim_1/new/TOP_TEST.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_TEST

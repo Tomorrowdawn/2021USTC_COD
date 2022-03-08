@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="insmem_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1623762251">
+  <File Type="PA-TCL" Name="insmem.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="insmem_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="insmem_reports.tcl"/>
+  <File Type="RDS-RDS" Name="insmem.vds"/>
+  <File Type="RDS-UTIL" Name="insmem_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="insmem_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="insmem.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="insmem_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="insmem_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/insmem">
+    <File Path="$PPRDIR/sources/ip/insmem/insmem.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="insmem"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/insmem">
+    <File Path="$PPRDIR/sources/ip/insmem/insmem.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="insmem"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
